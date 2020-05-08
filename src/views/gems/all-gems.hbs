@@ -1,0 +1,71 @@
+<div class="row">
+    {{#each gems}}
+    <div class="col-md-3">
+        <div class="card">
+            <h6>ID:{{_id}}</h6>
+            <h4 class="card-title d-flex justify-content-between align-item-center">
+               Name:  {{name}}
+                <a href="/gems/edit/{{_id}}">
+                    <i class="fas fa-edit">
+                    </i>
+                </a>
+            </h4>
+            <p>
+               Description: {{description}}
+            </p>
+            <p>
+                Price: {{price}} 
+            </p>
+            <p>
+                Can purchase:{{canPurchase}}
+            </p>
+            <h6>
+                Specs
+            </h6>
+            <p>
+               Faces: {{faces}} 
+            </p>
+            <p>
+                Color: {{color}}
+            </p>
+            <p>
+                Rarity: {{rarity}}
+            </p>
+            <p>
+                Shine: {{shine}}
+            </p>
+            <h6>Images</h6>
+            <p>
+                URL: {{url}}
+            </p>
+            <p>
+                Number: {{number}}
+            </p>
+            <h6>Reviews</h6>
+            <p>
+                Stars: {{stars}}
+            </p>
+            <p>
+                Body: {{body}}
+            </p>
+            <p>
+                Author: {{author}}
+            </p>
+            
+            <form action="/gems/delete/{{_id}}?_method=DELETE" method="POST">
+                <input type="hidden" name="_method" value="DELETE">
+                <button class="btn btn-primary btn-block btn-sm" type="submit">
+                    Delete
+                </button>
+            </form>
+        </div>
+    </div>
+    {{else}}
+    <div class="card mx-auto">
+        <div class="card-body">
+            <p class="lead">There are not Gems yet.</p>
+            <a href="/gems/add" class="btn btn-success btn-block">Add One!</a>
+        </div>
+    </div>
+    {{/each}}
+</div>

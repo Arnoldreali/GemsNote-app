@@ -1,0 +1,90 @@
+<div class="col md-5 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h3>New Gem</h3>
+    
+        </div>
+        <div class="card-body">
+            <form action="/gems/new-gem" method="POST">
+                <div class="form-group">
+                    <h6>Name:</h6>
+                    <input type="text" name="name" class='form-control' placeholder="Name Of The Gem" autofocus>
+                </div>
+                 <div class="form-group">
+                    <h6>Description:</h6>
+                    <textarea name="description" cols="30" rows="5" placeholder="Description Of The Gem" class="form-control">
+                    </textarea>
+                </div>
+                <div class="form-group">
+                    <h6>Price: </h6>
+                    <input type="number" name="price" class='form-control' placeholder="Price of the Gem">
+                </div>
+                <h6>Can Purchase:</h6>
+               <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="canPurchase">
+                        Select if you can purchase
+                    </label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <h6>Specs</h6>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <h6>faces:</h6>
+                            <input type="number" min="1" max="50"  name="faces" class='form-control' placeholder="Faces of the Gem">
+                        </div>
+                        <div class="form-group">
+                            <h6>color:</h6>
+                            <input type="text" name="color" class='form-control' placeholder="Color of the Gem">
+                        </div>
+                        <div class="form-group">
+                            <h6>rarity:</h6>
+                            <input type="number" min="0" max="20" name="rarity" class='form-control' placeholder="rarity level">
+                        </div>
+                        <div class="form-group">
+                            <h6>shine:</h6>
+                            <input type="number" min="0" max="20" name="shine" class='form-control' placeholder="shine level">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <h6>Images</h6>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <h6>URL:</h6>
+                            <input type="string"  name="url" class='form-control' placeholder="url of the images in cloudinary">
+                        </div>
+                        <div class="form-group">
+                            <h6>Number:</h6>
+                            <input type="number" name="number" class='form-control' placeholder="number of the images">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <h6>Review</h6>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <h6>Stars</h6>
+                            <input type="number" min="0" max="5" name="star" class='form-control' placeholder="levels of stars">
+                        </div>
+                        <div class="form-group">
+                            <h6>Body:</h6>
+                            <textarea name="body" cols="30" rows="5" placeholder="Review comment" class="form-control">
+                            </textarea>
+                        </div>
+                        <div class="form-group">
+                            <h6>Author:</h6>
+                             <input type="string"  name="author" class='form-control' placeholder="Name of the author">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block">
+                        save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
