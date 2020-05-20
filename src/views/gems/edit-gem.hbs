@@ -31,19 +31,19 @@
                     <div class="form-group">
                         <div class="form-group">
                             <h6>faces:</h6>
-                            <input type="number" min="1" max="50"  name="faces" class='form-control' placeholder="Faces of the Gem" value="{{Gem.specs.faces}}">
+                            <input type="number" min="1" max="50"  name="faces" class='form-control' placeholder="Faces of the Gem" value="{{Gem.faces}}">
                         </div>
                         <div class="form-group">
                             <h6>color:</h6>
-                            <input type="text" name="color" class='form-control' placeholder="Color of the Gem" value="{{Gem.specs.color}}">
+                            <input type="text" name="color" class='form-control' placeholder="Color of the Gem" value="{{Gem.color}}">
                         </div>
                         <div class="form-group">
                             <h6>rarity:</h6>
-                            <input type="number" min="0" max="20" name="rarity" class='form-control' placeholder="rarity level" value="{{Gem.specs.rarity}}">
+                            <input type="number" min="0" max="20" name="rarity" class='form-control' placeholder="rarity level" value="{{Gem.rarity}}">
                         </div>
                         <div class="form-group">
                             <h6>shine:</h6>
-                            <input type="number" min="0" max="20" name="shine" class='form-control' placeholder="shine level" value="{{Gem.specs.shine}}"> 
+                            <input type="number" min="0" max="20" name="shine" class='form-control' placeholder="shine level" value="{{Gem.shine}}"> 
                         </div>
                     </div>
                 </div>
@@ -52,11 +52,11 @@
                     <div class="form-group">
                         <div class="form-group">
                             <h6>URL:</h6>
-                            <input type="string"  name="url" class='form-control' placeholder="url of the images in cloudinary" value="{{Gem.images.url}}">
+                            <input type="string"  name="url" class='form-control' placeholder="url of the images in cloudinary" value="{{Gem.url}}">
                         </div>
                         <div class="form-group">
                             <h6>Number:</h6>
-                            <input type="number" name="number" class='form-control' placeholder="number of the images" value="{{Gem.images.number}}">
+                            <input type="number" name="number" class='form-control' placeholder="number of the images" value="{{Gem.number}}">
                         </div>
                     </div>
                 </div>
@@ -65,16 +65,16 @@
                     <div class="form-group">
                         <div class="form-group">
                             <h6>Stars</h6>
-                            <input type="number" min="0" max="5" name="star" class='form-control' placeholder="levels of stars" value="{{Gem.reviews.stars}}">
+                            <input type="number" min="0" max="5" name="star" class='form-control' placeholder="levels of stars" value="{{Gem.stars}}">
                         </div>
                         <div class="form-group">
                             <h6>Body:</h6>
-                            <textarea name="body" cols="30" rows="5" placeholder="Review comment" class="form-control"  value="{{Gem.reviews.body}}">
+                            <textarea name="body" cols="30" rows="5" placeholder="Review comment" class="form-control">{{Gem.body}}
                             </textarea>
                         </div>
                         <div class="form-group">
                             <h6>Author:</h6>
-                             <input type="string"  name="author" class='form-control' placeholder="Name of the author"  value="{{Gem.reviews.author}}">
+                             <input type="string"  name="author" class='form-control' placeholder="Name of the author"  value="{{Gem.author}}">
                         </div>
                     </div>
                 </div>
